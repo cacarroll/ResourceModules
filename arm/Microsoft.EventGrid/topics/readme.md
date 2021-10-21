@@ -4,34 +4,34 @@ This module deploys Event Grid
 
 ## Resource Types
 
-| Resource Type | Api Version |
-| :-- | :-- |
-| `Microsoft.EventGrid/topics/providers/diagnosticsettings` | 2017-05-01-preview |
-| `Microsoft.EventGrid/topics/providers/roleAssignments` | 2018-09-01-preview |
-| `Microsoft.EventGrid/topics` | [variables('eventGridApiVersion')] |
-| `Microsoft.Network/privateEndpoints/privateDnsZoneGroups` | 2020-05-01 |
-| `Microsoft.Network/privateEndpoints` | 2020-05-01 |
-| `Microsoft.Resources/deployments` | 2020-06-01 |
-| `providers/locks` | 2016-09-01 |
+| Resource Type                                             | Api Version                        |
+| :-------------------------------------------------------- | :--------------------------------- |
+| `Microsoft.EventGrid/topics/providers/diagnosticsettings` | 2017-05-01-preview                 |
+| `Microsoft.EventGrid/topics/providers/roleAssignments`    | 2018-09-01-preview                 |
+| `Microsoft.EventGrid/topics`                              | [variables('eventGridApiVersion')] |
+| `Microsoft.Network/privateEndpoints/privateDnsZoneGroups` | 2020-05-01                         |
+| `Microsoft.Network/privateEndpoints`                      | 2020-05-01                         |
+| `Microsoft.Resources/deployments`                         | 2020-06-01                         |
+| `providers/locks`                                         | 2016-09-01                         |
 
 ## Parameters
 
-| Parameter Name | Type | Description | DefaultValue | Possible values |
-| :-- | :-- | :-- | :-- | :-- |
-| `cuaId` | string | Optional. Customer Usage Attribution id (GUID). This GUID must be previously registered |  |  |
-| `diagnosticLogsRetentionInDays` | int | Optional. Specifies the number of days that logs will be kept for; a value of 0 will retain data indefinitely. | 365 |  |
-| `diagnosticStorageAccountId` | string | Optional. Resource identifier of the Diagnostic Storage Account. |  |  |
-| `eventGridTopicName` | string | Required. The name of the Event Grid Topic |  |  |
-| `eventHubAuthorizationRuleId` | string | Optional. Resource ID of the event hub authorization rule for the Event Hubs namespace in which the event hub should be created or streamed to. |  |  |
-| `eventHubName` | string | Optional. Name of the event hub within the namespace to which logs are streamed. Without this, an event hub is created for each log category. |  |  |
-| `inboundIpRules` | array | Optional. Array of IPs to whitelist. | System.Object[] |  |
-| `location` | string | Optional. Location for all Resources. | [resourceGroup().location] |  |
-| `lock` | string | Optional. Specify the type of lock. | 'NotSpecified' | 'CanNotDelete', 'NotSpecified', 'ReadOnly' |
-| `publicNetworkAccess` | string |  | Enabled |  |
-| `privateEndpoints` | array | System.Object[] |  | Optional. Configuration Details for private endpoints. |
-| `roleAssignments` | array | Optional. Array of role assignment objects that contain the 'roleDefinitionIdOrName' and 'principalId' to define RBAC role assignments on this resource. In the roleDefinitionIdOrName attribute, you can provide either the display name of the role definition, or its fully qualified ID in the following format: '/providers/Microsoft.Authorization/roleDefinitions/c2f4ef07-c644-48eb-af81-4b1b4947fb11' | System.Object[] |  |
-| `tags` | object | Optional. Tags of the resource. |  |  |
-| `workspaceId` | string | Optional. Resource identifier of Log Analytics. |  |  |
+| Parameter Name                  | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                    | DefaultValue               | Possible values                                        |
+| :------------------------------ | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------- | :----------------------------------------------------- |
+| `cuaId`                         | string | Optional. Customer Usage Attribution id (GUID). This GUID must be previously registered                                                                                                                                                                                                                                                                                                                        |                            |                                                        |
+| `diagnosticLogsRetentionInDays` | int    | Optional. Specifies the number of days that logs will be kept for; a value of 0 will retain data indefinitely.                                                                                                                                                                                                                                                                                                 | 365                        |                                                        |
+| `diagnosticStorageAccountId`    | string | Optional. Resource identifier of the Diagnostic Storage Account.                                                                                                                                                                                                                                                                                                                                               |                            |                                                        |
+| `eventGridTopicName`            | string | Required. The name of the Event Grid Topic                                                                                                                                                                                                                                                                                                                                                                     |                            |                                                        |
+| `eventHubAuthorizationRuleId`   | string | Optional. Resource ID of the event hub authorization rule for the Event Hubs namespace in which the event hub should be created or streamed to.                                                                                                                                                                                                                                                                |                            |                                                        |
+| `eventHubName`                  | string | Optional. Name of the event hub within the namespace to which logs are streamed. Without this, an event hub is created for each log category.                                                                                                                                                                                                                                                                  |                            |                                                        |
+| `inboundIpRules`                | array  | Optional. Array of IPs to whitelist.                                                                                                                                                                                                                                                                                                                                                                           | System.Object[]            |                                                        |
+| `location`                      | string | Optional. Location for all Resources.                                                                                                                                                                                                                                                                                                                                                                          | [resourceGroup().location] |                                                        |
+| `lock`                          | string | Optional. Specify the type of lock.                                                                                                                                                                                                                                                                                                                                                                            | 'NotSpecified'             | 'CanNotDelete', 'NotSpecified', 'ReadOnly'             |
+| `publicNetworkAccess`           | string |                                                                                                                                                                                                                                                                                                                                                                                                                | Enabled                    |                                                        |
+| `privateEndpoints`              | array  | System.Object[]                                                                                                                                                                                                                                                                                                                                                                                                |                            | Optional. Configuration Details for private endpoints. |
+| `roleAssignments`               | array  | Optional. Array of role assignment objects that contain the 'roleDefinitionIdOrName' and 'principalId' to define RBAC role assignments on this resource. In the roleDefinitionIdOrName attribute, you can provide either the display name of the role definition, or its fully qualified ID in the following format: '/providers/Microsoft.Authorization/roleDefinitions/c2f4ef07-c644-48eb-af81-4b1b4947fb11' | System.Object[]            |                                                        |
+| `tags`                          | object | Optional. Tags of the resource.                                                                                                                                                                                                                                                                                                                                                                                |                            |                                                        |
+| `workspaceId`                   | string | Optional. Resource identifier of Log Analytics.                                                                                                                                                                                                                                                                                                                                                                |                            |                                                        |
 
 
 ### Parameter Usage: `privateEndpoints`
@@ -48,10 +48,10 @@ To use Private Endpoint the following dependencies must be deployed:
         // Example showing all available fields
         {
             "name": "sxx-az-sa-cac-y-123-pe", // Optional: Name will be automatically generated if one is not provided here
-            "subnetResourceId": "/subscriptions/8629be3b-96bc-482d-a04b-ffff597c65a2/resourceGroups/validation-rg/providers/Microsoft.Network/virtualNetworks/sxx-az-vnet-weu-x-001/subnets/sxx-az-subnet-weu-x-001",
+            "subnetResourceId": "/subscriptions/65c61e02-d55a-493f-9f4f-741a6cfc0c49/resourceGroups/validation-rg/providers/Microsoft.Network/virtualNetworks/sxx-az-vnet-weu-x-001/subnets/sxx-az-subnet-weu-x-001",
             "service": "vault",
             "privateDnsZoneResourceIds": [ // Optional: No DNS record will be created if a private DNS zone Resource ID is not specified
-                "/subscriptions/8629be3b-96bc-482d-a04b-ffff597c65a2/resourceGroups/validation-rg/providers/Microsoft.Network/privateDnsZones/privatelink.vaultcore.azure.net"
+                "/subscriptions/65c61e02-d55a-493f-9f4f-741a6cfc0c49/resourceGroups/validation-rg/providers/Microsoft.Network/privateDnsZones/privatelink.vaultcore.azure.net"
             ],
             "customDnsConfigs": [ // Optional
                 {
@@ -114,11 +114,11 @@ Tag names and tag values can be provided as needed. A tag can be left without a 
 
 ## Outputs
 
-| Output Name | Type | Description |
-| :-- | :-- | :-- |
-| `eventGridName` | string | The Name of the Event Grid Topic |
+| Output Name              | Type   | Description                                        |
+| :----------------------- | :----- | :------------------------------------------------- |
+| `eventGridName`          | string | The Name of the Event Grid Topic                   |
 | `eventGridResourceGroup` | string | The name of the Resource Group with the Event Grid |
-| `eventGridResourceId` | string | The Resource Id of the Event Grid |
+| `eventGridResourceId`    | string | The Resource Id of the Event Grid                  |
 
 ### Scripts
 

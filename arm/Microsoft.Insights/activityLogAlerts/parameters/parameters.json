@@ -7,7 +7,7 @@
         },
         "scopes": {
             "value": [
-                "/subscriptions/8629be3b-96bc-482d-a04b-ffff597c65a2"
+                "/subscriptions/65c61e02-d55a-493f-9f4f-741a6cfc0c49"
             ]
         },
         "conditions": {
@@ -29,7 +29,7 @@
         "actions": {
             "value": [
                 {
-                    "actionGroupId": "/subscriptions/8629be3b-96bc-482d-a04b-ffff597c65a2/resourceGroups/validation-rg/providers/microsoft.insights/actiongroups/adp-sxx-az-ag-weu-x-001"
+                    "actionGroupId": "/subscriptions/65c61e02-d55a-493f-9f4f-741a6cfc0c49/resourceGroups/validation-rg/providers/microsoft.insights/actiongroups/adp-sxx-az-ag-weu-x-001"
                 }
             ]
         },

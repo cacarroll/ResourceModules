@@ -62,7 +62,7 @@ This module deploys Azure Monitor Private Link Scope
 "scopedResources": {
     "value": [
         {
-            "linkedResourceId": "/subscriptions/8629be3b-96bc-482d-a04b-ffff597c65a2/resourcegroups/prd-monitoring-rg/providers/microsoft.operationalinsights/workspaces/z1-prd-law-01"
+            "linkedResourceId": "/subscriptions/65c61e02-d55a-493f-9f4f-741a6cfc0c49/resourcegroups/prd-monitoring-rg/providers/microsoft.operationalinsights/workspaces/z1-prd-law-01"
         }
     ]
 }
@@ -82,13 +82,13 @@ To use Private Endpoints the following dependencies must be deployed:
         // Example showing all available fields
         {
             "name": "sxx-az-sa-cac-y-123-pe", // Optional: Name will be automatically generated if one is not provided here
-            "subnetResourceId": "/subscriptions/8629be3b-96bc-482d-a04b-ffff597c65a2/resourceGroups/validation-rg/providers/Microsoft.Network/virtualNetworks/sxx-az-vnet-weu-x-001/subnets/sxx-az-subnet-weu-x-001",
+            "subnetResourceId": "/subscriptions/65c61e02-d55a-493f-9f4f-741a6cfc0c49/resourceGroups/validation-rg/providers/Microsoft.Network/virtualNetworks/sxx-az-vnet-weu-x-001/subnets/sxx-az-subnet-weu-x-001",
             "service": "azuremonitor",
             "privateDnsZoneResourceIds": [ // Optional: No DNS record will be created if a private DNS zone Resource ID is not specified
-                "/subscriptions/8629be3b-96bc-482d-a04b-ffff597c65a2/resourceGroups/validation-rg/providers/Microsoft.Network/privateDnsZones/privatelink.agentsvc.azure-automation.net",
-                "/subscriptions/8629be3b-96bc-482d-a04b-ffff597c65a2/resourceGroups/validation-rg/providers/Microsoft.Network/privateDnsZones/privatelink.monitor.azure.com",
-                "/subscriptions/8629be3b-96bc-482d-a04b-ffff597c65a2/resourceGroups/validation-rg/providers/Microsoft.Network/privateDnsZones/privatelink.ods.opinsights.azure.com",
-                "/subscriptions/8629be3b-96bc-482d-a04b-ffff597c65a2/resourceGroups/validation-rg/providers/Microsoft.Network/privateDnsZones/privatelink.oms.opinsights.azure.com"
+                "/subscriptions/65c61e02-d55a-493f-9f4f-741a6cfc0c49/resourceGroups/validation-rg/providers/Microsoft.Network/privateDnsZones/privatelink.agentsvc.azure-automation.net",
+                "/subscriptions/65c61e02-d55a-493f-9f4f-741a6cfc0c49/resourceGroups/validation-rg/providers/Microsoft.Network/privateDnsZones/privatelink.monitor.azure.com",
+                "/subscriptions/65c61e02-d55a-493f-9f4f-741a6cfc0c49/resourceGroups/validation-rg/providers/Microsoft.Network/privateDnsZones/privatelink.ods.opinsights.azure.com",
+                "/subscriptions/65c61e02-d55a-493f-9f4f-741a6cfc0c49/resourceGroups/validation-rg/providers/Microsoft.Network/privateDnsZones/privatelink.oms.opinsights.azure.com"
             ],
             "customDnsConfigs": [ // Optional
                 {
@@ -101,7 +101,7 @@ To use Private Endpoints the following dependencies must be deployed:
         },
         // Example showing only mandatory fields
         {
-            "subnetResourceId": "/subscriptions/8629be3b-96bc-482d-a04b-ffff597c65a2/resourceGroups/validation-rg/providers/Microsoft.Network/virtualNetworks/sxx-az-vnet-weu-x-001/subnets/sxx-az-subnet-weu-x-001",
+            "subnetResourceId": "/subscriptions/65c61e02-d55a-493f-9f4f-741a6cfc0c49/resourceGroups/validation-rg/providers/Microsoft.Network/virtualNetworks/sxx-az-vnet-weu-x-001/subnets/sxx-az-subnet-weu-x-001",
             "service": "azuremonitor"
         }
     ]

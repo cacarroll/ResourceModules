@@ -2,17 +2,17 @@
 
 ## Resource types
 
-| Resource Type | Api Version |
-|:--|:--|
-| `Microsoft.Resources/deployments` | 2020-06-01 |
-| `Microsoft.DataFactory/factories` | 2018-06-01 |
-| `Microsoft.DataFactory/factories/managedVirtualNetworks` | 2018-06-01 |
-| `Microsoft.DataFactory/factories/integrationRuntimes` | 2018-06-01 |
+| Resource Type                                                  | Api Version        |
+| :------------------------------------------------------------- | :----------------- |
+| `Microsoft.Resources/deployments`                              | 2020-06-01         |
+| `Microsoft.DataFactory/factories`                              | 2018-06-01         |
+| `Microsoft.DataFactory/factories/managedVirtualNetworks`       | 2018-06-01         |
+| `Microsoft.DataFactory/factories/integrationRuntimes`          | 2018-06-01         |
 | `Microsoft.DataFactory/factories/providers/diagnosticsettings` | 2017-05-01-preview |
-| `Microsoft.DataFactory/factories/providers/roleAssignments` | 2020-04-01-preview |
-| `providers/locks` | 2016-09-01 |
-| `Microsoft.Network/privateEndpoints/privateDnsZoneGroups` | 2020-05-01 |
-| `Microsoft.Network/privateEndpoints` | 2020-05-01 |
+| `Microsoft.DataFactory/factories/providers/roleAssignments`    | 2020-04-01-preview |
+| `providers/locks`                                              | 2016-09-01         |
+| `Microsoft.Network/privateEndpoints/privateDnsZoneGroups`      | 2020-05-01         |
+| `Microsoft.Network/privateEndpoints`                           | 2020-05-01         |
 
 
 ### Resource dependency
@@ -26,30 +26,30 @@ If you enable git Repository the repository including branch has to exist before
 
 ## Parameters
 
-| Parameter Name | Type | Description | DefaultValue | Possible values |
-| :-- | :-- | :-- | :-- | :-- |
-| `dataFactoryName` | string | Required. The name of the Azure Factory to create |  |  |
-| `location` | string | Optional. Location for all Resources. | [resourceGroup().location] |  |
-| `publicNetworkAccess` | bool | Optional. Enable or disable public network access. | true |  |
-| `gitConfigureLater` | bool | Optional. Boolean to define whether or not to configure git during template deployment. | true |  |
-| `gitRepoType` | string |Optional. Repo type - can be 'FactoryVSTSConfiguration' or 'FactoryGitHubConfiguration'. Default is 'FactoryVSTSConfiguration'. | FactoryVSTSConfiguration |  |
-| `gitAccountName` | string | Optional. The account name. | "" |  |
-| `gitProjectName` | string | Optional. The project name. Only relevant for 'FactoryVSTSConfiguration'. | "" |  |
-| `gitRepositoryName` | string | Optional. The repository name. | "" |  |
-| `gitCollaborationBranch` | string | Optional. The collaboration branch name. Default is 'main'. | main |  |
-| `gitRootFolder` | string | Optional. The root folder path name. Default is '/'. | / |  |
-| `vNetEnabled` | bool | Optional. Enable or disable managed virtual networks and related to that AutoResolveIntegrationRuntime. | false |  |
-| `roleAssignments` | string | Optional. Array of role assignment objects that contain the 'roleDefinitionIdOrName' and 'principalId' to define RBAC role assignments on this resource. In the roleDefinitionIdOrName attribute, you can provide either the display name of the role definition, or it's fully qualified ID in the following format: '/providers/Microsoft.Authorization/roleDefinitions/c2f4ef07-c644-48eb-af81-4b1b4947fb11' |  |
-| `lock` | string | Optional. Specify the type of lock. | 'NotSpecified' | 'CanNotDelete', 'NotSpecified', 'ReadOnly' |
-| `diagnosticSettingName` | string | Optional. The name of the Diagnostic setting. | service |  |
-| `diagnosticLogsRetentionInDays` | int | Optional. Specifies the number of days that logs will be kept for; a value of 0 will retain data indefinitely. | 365 |  |
-| `diagnosticStorageAccountId` | string | Optional. Resource identifier of the Diagnostic Storage Account. |  |  |
-| `workspaceId` | string | Optional. Resource identifier of Log Analytics. |  |
-| `eventHubAuthorizationRuleId` | string | Optional. Resource ID of the event hub authorization rule for the Event Hubs namespace in which the event hub should be created or streamed to. |  |  |
-| `eventHubName` | string | Optional. Name of the event hub within the namespace to which logs are streamed. Without this, an event hub is created for each log category. |  |  |
-| `privateEndpoints` | array | System.Object[] |  | Optional. Configuration Details for private endpoints. |
-| `tags` | object | Optional. Tags of the resource. | {} |  |
-| `cuaId` | string | Optional. Customer Usage Attribution id (GUID). This GUID must be previously registered |  |  |
+| Parameter Name                  | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                     | DefaultValue               | Possible values                                        |
+| :------------------------------ | :----- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------- | :----------------------------------------------------- |
+| `dataFactoryName`               | string | Required. The name of the Azure Factory to create                                                                                                                                                                                                                                                                                                                                                               |                            |                                                        |
+| `location`                      | string | Optional. Location for all Resources.                                                                                                                                                                                                                                                                                                                                                                           | [resourceGroup().location] |                                                        |
+| `publicNetworkAccess`           | bool   | Optional. Enable or disable public network access.                                                                                                                                                                                                                                                                                                                                                              | true                       |                                                        |
+| `gitConfigureLater`             | bool   | Optional. Boolean to define whether or not to configure git during template deployment.                                                                                                                                                                                                                                                                                                                         | true                       |                                                        |
+| `gitRepoType`                   | string | Optional. Repo type - can be 'FactoryVSTSConfiguration' or 'FactoryGitHubConfiguration'. Default is 'FactoryVSTSConfiguration'.                                                                                                                                                                                                                                                                                 | FactoryVSTSConfiguration   |                                                        |
+| `gitAccountName`                | string | Optional. The account name.                                                                                                                                                                                                                                                                                                                                                                                     | ""                         |                                                        |
+| `gitProjectName`                | string | Optional. The project name. Only relevant for 'FactoryVSTSConfiguration'.                                                                                                                                                                                                                                                                                                                                       | ""                         |                                                        |
+| `gitRepositoryName`             | string | Optional. The repository name.                                                                                                                                                                                                                                                                                                                                                                                  | ""                         |                                                        |
+| `gitCollaborationBranch`        | string | Optional. The collaboration branch name. Default is 'main'.                                                                                                                                                                                                                                                                                                                                                     | main                       |                                                        |
+| `gitRootFolder`                 | string | Optional. The root folder path name. Default is '/'.                                                                                                                                                                                                                                                                                                                                                            | /                          |                                                        |
+| `vNetEnabled`                   | bool   | Optional. Enable or disable managed virtual networks and related to that AutoResolveIntegrationRuntime.                                                                                                                                                                                                                                                                                                         | false                      |                                                        |
+| `roleAssignments`               | string | Optional. Array of role assignment objects that contain the 'roleDefinitionIdOrName' and 'principalId' to define RBAC role assignments on this resource. In the roleDefinitionIdOrName attribute, you can provide either the display name of the role definition, or it's fully qualified ID in the following format: '/providers/Microsoft.Authorization/roleDefinitions/c2f4ef07-c644-48eb-af81-4b1b4947fb11' |                            |
+| `lock`                          | string | Optional. Specify the type of lock.                                                                                                                                                                                                                                                                                                                                                                             | 'NotSpecified'             | 'CanNotDelete', 'NotSpecified', 'ReadOnly'             |
+| `diagnosticSettingName`         | string | Optional. The name of the Diagnostic setting.                                                                                                                                                                                                                                                                                                                                                                   | service                    |                                                        |
+| `diagnosticLogsRetentionInDays` | int    | Optional. Specifies the number of days that logs will be kept for; a value of 0 will retain data indefinitely.                                                                                                                                                                                                                                                                                                  | 365                        |                                                        |
+| `diagnosticStorageAccountId`    | string | Optional. Resource identifier of the Diagnostic Storage Account.                                                                                                                                                                                                                                                                                                                                                |                            |                                                        |
+| `workspaceId`                   | string | Optional. Resource identifier of Log Analytics.                                                                                                                                                                                                                                                                                                                                                                 |                            |
+| `eventHubAuthorizationRuleId`   | string | Optional. Resource ID of the event hub authorization rule for the Event Hubs namespace in which the event hub should be created or streamed to.                                                                                                                                                                                                                                                                 |                            |                                                        |
+| `eventHubName`                  | string | Optional. Name of the event hub within the namespace to which logs are streamed. Without this, an event hub is created for each log category.                                                                                                                                                                                                                                                                   |                            |                                                        |
+| `privateEndpoints`              | array  | System.Object[]                                                                                                                                                                                                                                                                                                                                                                                                 |                            | Optional. Configuration Details for private endpoints. |
+| `tags`                          | object | Optional. Tags of the resource.                                                                                                                                                                                                                                                                                                                                                                                 | {}                         |                                                        |
+| `cuaId`                         | string | Optional. Customer Usage Attribution id (GUID). This GUID must be previously registered                                                                                                                                                                                                                                                                                                                         |                            |                                                        |
 
 
 
@@ -115,10 +115,10 @@ To use Private Endpoint the following dependencies must be deployed:
         // Example showing all available fields
         {
             "name": "sxx-az-sa-cac-y-123-pe", // Optional: Name will be automatically generated if one is not provided here
-            "subnetResourceId": "/subscriptions/8629be3b-96bc-482d-a04b-ffff597c65a2/resourceGroups/validation-rg/providers/Microsoft.Network/virtualNetworks/sxx-az-vnet-weu-x-001/subnets/sxx-az-subnet-weu-x-001",
+            "subnetResourceId": "/subscriptions/65c61e02-d55a-493f-9f4f-741a6cfc0c49/resourceGroups/validation-rg/providers/Microsoft.Network/virtualNetworks/sxx-az-vnet-weu-x-001/subnets/sxx-az-subnet-weu-x-001",
             "service": "dataFactory",
             "privateDnsZoneResourceIds": [ // Optional: No DNS record will be created if a private DNS zone Resource ID is not specified
-                "/subscriptions/8629be3b-96bc-482d-a04b-ffff597c65a2/resourceGroups/validation-rg/providers/Microsoft.Network/privateDnsZones/privatelink.datafactory.azure.net"
+                "/subscriptions/65c61e02-d55a-493f-9f4f-741a6cfc0c49/resourceGroups/validation-rg/providers/Microsoft.Network/privateDnsZones/privatelink.datafactory.azure.net"
             ],
             "customDnsConfigs": [ // Optional
                 {
@@ -131,7 +131,7 @@ To use Private Endpoint the following dependencies must be deployed:
         },
         // Example showing only mandatory fields
         {
-            "subnetResourceId": "/subscriptions/8629be3b-96bc-482d-a04b-ffff597c65a2/resourceGroups/validation-rg/providers/Microsoft.Network/virtualNetworks/sxx-az-vnet-weu-x-001/subnets/sxx-az-subnet-weu-x-001",
+            "subnetResourceId": "/subscriptions/65c61e02-d55a-493f-9f4f-741a6cfc0c49/resourceGroups/validation-rg/providers/Microsoft.Network/virtualNetworks/sxx-az-vnet-weu-x-001/subnets/sxx-az-subnet-weu-x-001",
             "service": "portal"
         }
     ]
@@ -141,11 +141,11 @@ To use Private Endpoint the following dependencies must be deployed:
 
 ## Outputs
 
-| Output Name | Type | Description |
-| :-- | :-- | :-- |
-| `dataFactoryName` | string | The Name of the Azure Data Factory instance |
+| Output Name                | Type   | Description                                          |
+| :------------------------- | :----- | :--------------------------------------------------- |
+| `dataFactoryName`          | string | The Name of the Azure Data Factory instance          |
 | `dataFactoryResourceGroup` | string | The name of the Resource Group with the Data factory |
-| `dataFactoryResourceId` | string | The Resource Id of the Data factory |
+| `dataFactoryResourceId`    | string | The Resource Id of the Data factory                  |
 
 ### References
 

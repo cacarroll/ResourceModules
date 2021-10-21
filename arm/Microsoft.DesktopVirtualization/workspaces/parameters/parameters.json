@@ -10,7 +10,7 @@
         },
         "appGroupResourceIds": {
             "value": [
-                "/subscriptions/8629be3b-96bc-482d-a04b-ffff597c65a2/resourceGroups/validation-rg/providers/Microsoft.DesktopVirtualization/applicationgroups/sxx-az-avdag-weu-x-001"
+                "/subscriptions/65c61e02-d55a-493f-9f4f-741a6cfc0c49/resourceGroups/validation-rg/providers/Microsoft.DesktopVirtualization/applicationgroups/sxx-az-avdag-weu-x-001"
             ]
         },
         "workspaceFriendlyName": {

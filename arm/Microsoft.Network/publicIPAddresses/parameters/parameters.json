@@ -12,7 +12,7 @@
             "value": "Static"
         },
         "workspaceId": {
-            "value": "/subscriptions/8629be3b-96bc-482d-a04b-ffff597c65a2/resourcegroups/validation-rg/providers/microsoft.operationalinsights/workspaces/adp-sxx-az-la-weu-x-001"
+            "value": "/subscriptions/65c61e02-d55a-493f-9f4f-741a6cfc0c49/resourcegroups/validation-rg/providers/microsoft.operationalinsights/workspaces/adp-sxx-az-la-weu-x-001"
         },
         "roleAssignments": {
             "value": [

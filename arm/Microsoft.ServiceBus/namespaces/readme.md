@@ -4,47 +4,47 @@ This module deploys Service Bus Namespace resource.
 
 ## Resource types
 
-| Resource Type | Api Version |
-| :-- | :-- |
-| `Microsoft.Resources/deployments` | 2020-06-01 |
-| `Microsoft.Network/privateEndpoints/privateDnsZoneGroups` | 2020-05-01 |
-| `Microsoft.Network/privateEndpoints` | 2020-05-01 |
-| `Microsoft.ServiceBus/namespaces/AuthorizationRules` | 2017-04-01 |
-| `Microsoft.ServiceBus/namespaces/disasterRecoveryConfigs` | 2017-04-01 |
-| `Microsoft.ServiceBus/namespaces/ipFilterRules` | 2018-01-01-preview |
-| `Microsoft.ServiceBus/namespaces/migrationConfigurations` | 2017-04-01 |
-| `Microsoft.ServiceBus/namespaces/virtualNetworkRules` | 2018-01-01-preview |
-| `Microsoft.Insights/diagnosticSettings` | 2017-05-01-preview |
+| Resource Type                                               | Api Version        |
+| :---------------------------------------------------------- | :----------------- |
+| `Microsoft.Resources/deployments`                           | 2020-06-01         |
+| `Microsoft.Network/privateEndpoints/privateDnsZoneGroups`   | 2020-05-01         |
+| `Microsoft.Network/privateEndpoints`                        | 2020-05-01         |
+| `Microsoft.ServiceBus/namespaces/AuthorizationRules`        | 2017-04-01         |
+| `Microsoft.ServiceBus/namespaces/disasterRecoveryConfigs`   | 2017-04-01         |
+| `Microsoft.ServiceBus/namespaces/ipFilterRules`             | 2018-01-01-preview |
+| `Microsoft.ServiceBus/namespaces/migrationConfigurations`   | 2017-04-01         |
+| `Microsoft.ServiceBus/namespaces/virtualNetworkRules`       | 2018-01-01-preview |
+| `Microsoft.Insights/diagnosticSettings`                     | 2017-05-01-preview |
 | `Microsoft.ServiceBus/namespaces/providers/roleAssignments` | 2018-09-01-preview |
-| `Microsoft.ServiceBus/namespaces` | 2018-01-01-preview |
-| `Microsoft.Authorization/locks` | 2016-09-01 |
+| `Microsoft.ServiceBus/namespaces`                           | 2018-01-01-preview |
+| `Microsoft.Authorization/locks`                             | 2016-09-01         |
 
 ## Parameters
 
-| Parameter Name                | Type         | Default Value                                       | Possible values               | Description                                                                                                        |
-| :--| :--| :-| :--| :----------------------------------------------------------------------------------------------------------------- |
-| `serviceBusNamespaceName`| string | | | Optional. Name of the Service Bus Namespace.If no name is provided, then unique name will be created.|
-| `location`| string | | | Required. The Geo-location where the resource lives. | |
-| `skuName`| string | | | Required. Name of this SKU. - Basic, Standard, Premium. | Basic, Standard, Premium |
-| `zoneRedundant`| string | | | Optional. Enabling this property creates a Premium Service Bus Namespace in regions supported availability zones. | |
-| `partnerNamespaceId` | string | Optional. ARM Id of the Primary/Secondary Service Bus namespace name, which is part of GEO DR pairing. |  |  |
-| `namespaceAlias` | string | Optional. The Disaster Recovery configuration name. |  |  |
-| `authorizationRules` | array | Optional. Authorization Rules for the Event Hub namespace. | System.Object[] |  |
-| `ipFilterRules` | array | Optional. IP Filter Rules for the Service Bus namespace (requires Premium sku). | System.Object[] |  |
-| `targetNamespace` | string | Optional. Existing premium Namespace ARM Id name which has no entities, will be used for migration. |  |  |
-| `postMigrationName` | string | Optional. Name to access Standard Namespace after migration. |  |  |
-| `virtualNetworkRuleSubnetIds` | array | Optional. vNet Rules SubnetIds for the Service Bus namespace. | System.Object[] |  |
-| `diagnosticLogsRetentionInDays` | int | Optional. Specifies the number of days that logs will be kept for; a value of 0 will retain data indefinitely. | 365 |  |
-| `diagnosticStorageAccountId` | string | Optional. Resource identifier of the Diagnostic Storage Account. |  |  |
-| `workspaceId` | string | Optional. Resource identifier of Log Analytics. |  |  |
-| `eventHubAuthorizationRuleId` | string | "" | | Optional. Resource ID of the event hub authorization rule for the Event Hubs namespace in which the event hub should be created or streamed to.
-| `eventHubName` | string | "" | | Optional. Name of the event hub within the namespace to which logs are streamed. Without this, an event hub is created for each log category.
-| `lock` | string | Optional. Specify the type of lock. | 'NotSpecified' | 'CanNotDelete', 'NotSpecified', 'ReadOnly' |
-| `roleAssignments` | array | Optional. Array of role assignment objects that contain the 'roleDefinitionIdOrName' and 'principalId' to define RBAC role assignments on this resource. In the roleDefinitionIdOrName attribute, you can provide either the display name of the role definition, or its fully qualified ID in the following format: '/providers/Microsoft.Authorization/roleDefinitions/c2f4ef07-c644-48eb-af81-4b1b4947fb11' | System.Object[] |  |
-| `privateEndpoints` | array | System.Object[] |  | Optional. Configuration Details for private endpoints. |
-| `tags`| string | | | Optional. Tag names and tag values can be provided as needed (see below) | |
-| `cuaId`| string | | | Customer Usage Attribution id (GUID). This GUID must be previously registered | |
-| `baseTime` | string | utcNow('u') | | Generated. Do not provide a value! This date value is used to generate a SAS token toaccess the modules.
+| Parameter Name                  | Type   | Default Value                                                                                                                                                                                                                                                                                                                                                                                                  | Possible values | Description                                                                                                                                     |
+| :------------------------------ | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
+| `serviceBusNamespaceName`       | string |                                                                                                                                                                                                                                                                                                                                                                                                                |                 | Optional. Name of the Service Bus Namespace.If no name is provided, then unique name will be created.                                           |
+| `location`                      | string |                                                                                                                                                                                                                                                                                                                                                                                                                |                 | Required. The Geo-location where the resource lives.                                                                                            |                          |
+| `skuName`                       | string |                                                                                                                                                                                                                                                                                                                                                                                                                |                 | Required. Name of this SKU. - Basic, Standard, Premium.                                                                                         | Basic, Standard, Premium |
+| `zoneRedundant`                 | string |                                                                                                                                                                                                                                                                                                                                                                                                                |                 | Optional. Enabling this property creates a Premium Service Bus Namespace in regions supported availability zones.                               |                          |
+| `partnerNamespaceId`            | string | Optional. ARM Id of the Primary/Secondary Service Bus namespace name, which is part of GEO DR pairing.                                                                                                                                                                                                                                                                                                         |                 |                                                                                                                                                 |
+| `namespaceAlias`                | string | Optional. The Disaster Recovery configuration name.                                                                                                                                                                                                                                                                                                                                                            |                 |                                                                                                                                                 |
+| `authorizationRules`            | array  | Optional. Authorization Rules for the Event Hub namespace.                                                                                                                                                                                                                                                                                                                                                     | System.Object[] |                                                                                                                                                 |
+| `ipFilterRules`                 | array  | Optional. IP Filter Rules for the Service Bus namespace (requires Premium sku).                                                                                                                                                                                                                                                                                                                                | System.Object[] |                                                                                                                                                 |
+| `targetNamespace`               | string | Optional. Existing premium Namespace ARM Id name which has no entities, will be used for migration.                                                                                                                                                                                                                                                                                                            |                 |                                                                                                                                                 |
+| `postMigrationName`             | string | Optional. Name to access Standard Namespace after migration.                                                                                                                                                                                                                                                                                                                                                   |                 |                                                                                                                                                 |
+| `virtualNetworkRuleSubnetIds`   | array  | Optional. vNet Rules SubnetIds for the Service Bus namespace.                                                                                                                                                                                                                                                                                                                                                  | System.Object[] |                                                                                                                                                 |
+| `diagnosticLogsRetentionInDays` | int    | Optional. Specifies the number of days that logs will be kept for; a value of 0 will retain data indefinitely.                                                                                                                                                                                                                                                                                                 | 365             |                                                                                                                                                 |
+| `diagnosticStorageAccountId`    | string | Optional. Resource identifier of the Diagnostic Storage Account.                                                                                                                                                                                                                                                                                                                                               |                 |                                                                                                                                                 |
+| `workspaceId`                   | string | Optional. Resource identifier of Log Analytics.                                                                                                                                                                                                                                                                                                                                                                |                 |                                                                                                                                                 |
+| `eventHubAuthorizationRuleId`   | string | ""                                                                                                                                                                                                                                                                                                                                                                                                             |                 | Optional. Resource ID of the event hub authorization rule for the Event Hubs namespace in which the event hub should be created or streamed to. |
+| `eventHubName`                  | string | ""                                                                                                                                                                                                                                                                                                                                                                                                             |                 | Optional. Name of the event hub within the namespace to which logs are streamed. Without this, an event hub is created for each log category.   |
+| `lock`                          | string | Optional. Specify the type of lock.                                                                                                                                                                                                                                                                                                                                                                            | 'NotSpecified'  | 'CanNotDelete', 'NotSpecified', 'ReadOnly'                                                                                                      |
+| `roleAssignments`               | array  | Optional. Array of role assignment objects that contain the 'roleDefinitionIdOrName' and 'principalId' to define RBAC role assignments on this resource. In the roleDefinitionIdOrName attribute, you can provide either the display name of the role definition, or its fully qualified ID in the following format: '/providers/Microsoft.Authorization/roleDefinitions/c2f4ef07-c644-48eb-af81-4b1b4947fb11' | System.Object[] |                                                                                                                                                 |
+| `privateEndpoints`              | array  | System.Object[]                                                                                                                                                                                                                                                                                                                                                                                                |                 | Optional. Configuration Details for private endpoints.                                                                                          |
+| `tags`                          | string |                                                                                                                                                                                                                                                                                                                                                                                                                |                 | Optional. Tag names and tag values can be provided as needed (see below)                                                                        |                          |
+| `cuaId`                         | string |                                                                                                                                                                                                                                                                                                                                                                                                                |                 | Customer Usage Attribution id (GUID). This GUID must be previously registered                                                                   |                          |
+| `baseTime`                      | string | utcNow('u')                                                                                                                                                                                                                                                                                                                                                                                                    |                 | Generated. Do not provide a value! This date value is used to generate a SAS token toaccess the modules.                                        |
 
 ### Parameter Usage: `authorizationRules`
 
@@ -139,10 +139,10 @@ To use Private Endpoint the following dependencies must be deployed:
         // Example showing all available fields
         {
             "name": "sxx-az-sa-cac-y-123-pe", // Optional: Name will be automatically generated if one is not provided here
-            "subnetResourceId": "/subscriptions/8629be3b-96bc-482d-a04b-ffff597c65a2/resourceGroups/validation-rg/providers/Microsoft.Network/virtualNetworks/sxx-az-vnet-weu-x-001/subnets/sxx-az-subnet-weu-x-001",
+            "subnetResourceId": "/subscriptions/65c61e02-d55a-493f-9f4f-741a6cfc0c49/resourceGroups/validation-rg/providers/Microsoft.Network/virtualNetworks/sxx-az-vnet-weu-x-001/subnets/sxx-az-subnet-weu-x-001",
             "service": "vault",
             "privateDnsZoneResourceIds": [ // Optional: No DNS record will be created if a private DNS zone Resource ID is not specified
-                "/subscriptions/8629be3b-96bc-482d-a04b-ffff597c65a2/resourceGroups/validation-rg/providers/Microsoft.Network/privateDnsZones/privatelink.vaultcore.azure.net"
+                "/subscriptions/65c61e02-d55a-493f-9f4f-741a6cfc0c49/resourceGroups/validation-rg/providers/Microsoft.Network/privateDnsZones/privatelink.vaultcore.azure.net"
             ],
             "customDnsConfigs": [ // Optional
                 {
@@ -176,13 +176,13 @@ Tag names and tag values can be provided as needed. A tag can be left without a 
 
 ## Outputs
 
-| Output Name | Type | Description |
-| :-- | :-- | :-- |
-| `defaultAuthorizationRuleId` | string | The Id of the authorization rule marked by the variable with the same name. |
-| `serviceBusConnectionString` | string | The Service Bus Namespace connection string. |
-| `serviceBusNamespaceName` | string | The Name of the Service Bus Namespace. |
-| `serviceBusNamespaceResourceGroup` | string | The name of the Resource Group the Service Bus Namespace was created in. |
-| `serviceBusNamespaceResourceId` | string | The Resource Id of the Service Bus Namespace. |
+| Output Name                        | Type   | Description                                                                 |
+| :--------------------------------- | :----- | :-------------------------------------------------------------------------- |
+| `defaultAuthorizationRuleId`       | string | The Id of the authorization rule marked by the variable with the same name. |
+| `serviceBusConnectionString`       | string | The Service Bus Namespace connection string.                                |
+| `serviceBusNamespaceName`          | string | The Name of the Service Bus Namespace.                                      |
+| `serviceBusNamespaceResourceGroup` | string | The name of the Resource Group the Service Bus Namespace was created in.    |
+| `serviceBusNamespaceResourceId`    | string | The Resource Id of the Service Bus Namespace.                               |
 
 ## Considerations
 
