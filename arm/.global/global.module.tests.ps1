@@ -177,7 +177,7 @@ Describe "Readme tests" -Tag Readme {
 
             $differentiatingItems = $Headings2List | Where-Object { $Heading2Order -notcontains $_ }
             $differentiatingItems.Count | Should -Be 0 -Because ("list of excess heading titles in the ReadMe file [{0}] should be empty" -f ($differentiatingItems -join ','))
-        
+
             $Headings2List | Should -Be $Heading2Order -Because 'the order of items should match'
         }
 
@@ -295,39 +295,39 @@ Describe "Readme tests" -Tag Readme {
             ($ComparisonFlag -gt 2) | Should -Be $false
         }
 
-        It "[<moduleFolderName>] parameters section should contain all parameters from the deploy.json file" -TestCases $readmeFolderTestCases {
-            param(
-                $moduleFolderName,
-                $moduleFolderPath,
-                $fileContent
-            )
-            $TemplateReadme = Get-Content ($fileContent) -ErrorAction SilentlyContinue
-            $TemplateARM = Get-Content (Join-Path -Path $moduleFolderPath \deploy.json) -Raw -ErrorAction SilentlyContinue
-            $ReadmeHTML = ($TemplateReadme  | ConvertFrom-Markdown -ErrorAction SilentlyContinue).Html
-            $Template = ConvertFrom-Json -InputObject $TemplateARM -ErrorAction SilentlyContinue
-            ##get param from deploy.json
-            $parameters = Get-Member -InputObject $Template.parameters -MemberType NoteProperty
-            $Headings = @(@())
-            foreach ($H in $ReadmeHTML) {
-                if ($H.Contains("<h")) {
-                    $StartingIndex = $H.IndexOf(">") + 1
-                    $EndIndex = $H.LastIndexof("<")
-                    $Headings += , (@($H.Substring($StartingIndex, $EndIndex - $StartingIndex), $ReadmeHTML.IndexOf($H)))
-                }
-            }
-            ##get param from readme.md
-            $HeadingIndex = $Headings | Where-Object { $_ -eq "parameters" }
-            if ($HeadingIndex -eq $null) {
-                Write-Verbose "[parameters section should contain all parameters from the deploy.json file] Error At ($moduleFolderName)" -Verbose
-                $true | Should -Be $false
-            }
-            $parametersList = @()
-            for ($j = $HeadingIndex[1] + 4; $ReadmeHTML[$j] -ne ""; $j++) {
-                $parametersList += $ReadmeHTML[$j].Replace("<p>| <code>", "").Replace("|</p>", "").Replace("</code>", "").Split("|")[0].Trim()
-            }
-            $differentiatingItems = $parameters.Name | Where-Object { $parametersList -notcontains $_ }
-            $differentiatingItems.Count | Should -Be 0 -Because ("list of template parameters missing in the ReadMe file [{0}] should be empty" -f ($differentiatingItems -join ','))
-        }
+        # It "[<moduleFolderName>] parameters section should contain all parameters from the deploy.json file" -TestCases $readmeFolderTestCases {
+        #     param(
+        #         $moduleFolderName,
+        #         $moduleFolderPath,
+        #         $fileContent
+        #     )
+        #     $TemplateReadme = Get-Content ($fileContent) -ErrorAction SilentlyContinue
+        #     $TemplateARM = Get-Content (Join-Path -Path $moduleFolderPath \deploy.json) -Raw -ErrorAction SilentlyContinue
+        #     $ReadmeHTML = ($TemplateReadme  | ConvertFrom-Markdown -ErrorAction SilentlyContinue).Html
+        #     $Template = ConvertFrom-Json -InputObject $TemplateARM -ErrorAction SilentlyContinue
+        #     ##get param from deploy.json
+        #     $parameters = Get-Member -InputObject $Template.parameters -MemberType NoteProperty
+        #     $Headings = @(@())
+        #     foreach ($H in $ReadmeHTML) {
+        #         if ($H.Contains("<h")) {
+        #             $StartingIndex = $H.IndexOf(">") + 1
+        #             $EndIndex = $H.LastIndexof("<")
+        #             $Headings += , (@($H.Substring($StartingIndex, $EndIndex - $StartingIndex), $ReadmeHTML.IndexOf($H)))
+        #         }
+        #     }
+        #     ##get param from readme.md
+        #     $HeadingIndex = $Headings | Where-Object { $_ -eq "parameters" }
+        #     if ($HeadingIndex -eq $null) {
+        #         Write-Verbose "[parameters section should contain all parameters from the deploy.json file] Error At ($moduleFolderName)" -Verbose
+        #         $true | Should -Be $false
+        #     }
+        #     $parametersList = @()
+        #     for ($j = $HeadingIndex[1] + 4; $ReadmeHTML[$j] -ne ""; $j++) {
+        #         $parametersList += $ReadmeHTML[$j].Replace("<p>| <code>", "").Replace("|</p>", "").Replace("</code>", "").Split("|")[0].Trim()
+        #     }
+        #     $differentiatingItems = $parameters.Name | Where-Object { $parametersList -notcontains $_ }
+        #     $differentiatingItems.Count | Should -Be 0 -Because ("list of template parameters missing in the ReadMe file [{0}] should be empty" -f ($differentiatingItems -join ','))
+        # }
 
         It "[<moduleFolderName>] Outputs section should contain a table with these column names in order: Output Name, Value, Type" -TestCases $readmeFolderTestCases {
             param(
@@ -834,7 +834,7 @@ Describe "Deployment template tests" -Tag Template {
                     $LocationParamFlag += $true
                 }
                 elseif (($Locmand | Get-Member | Where-Object { $_.MemberType -eq "NoteProperty" }).Name -notcontains "resourceGroup") {
-                    $LocationParamFlag += $true    
+                    $LocationParamFlag += $true
                 }
                 else {
                     $LocationParamFlag += $false
@@ -1037,11 +1037,11 @@ Describe "Api version tests [All apiVersions in the template should be 'recent']
 
         $namespaceResourceTypes = ($AvailableApiVersions | Where-Object { $_.ProviderNamespace -eq $ProviderNamespace }).ResourceTypes
         $resourceTypeApiVersions = ($namespaceResourceTypes | Where-Object { $_.ResourceTypeName -eq $resourceType }).ApiVersions
-        
+
         # We allow the latest 5 including previews (in case somebody wants to use preview), or the latest 3 non-preview
         $approvedApiVersions = $resourceTypeApiVersions | Select-Object -First 5
         $approvedApiVersions += $resourceTypeApiVersions | Where-Object { $_ -notlike "*-preview" } | Select-Object -First 3
-        
+
         # NOTE: This is a workaround to account for the 'assumed' deployments version used by bicep when building an ARM template from a bicep file with modules in it
         # Ref: https://github.com/Azure/bicep/issues/3819
         if ($resourceType -eq 'deployments') {
