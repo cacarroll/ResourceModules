@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "apiManagementServiceName": {
-            "value": "sxx-az-am-weu-x-002"
+            "value": "sxx-az-am-weu-x-005"
         },
         "publisherEmail": {
             "value": "apimgmt-noreply@mail.windowsazure.com"
