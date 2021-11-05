@@ -26,7 +26,7 @@
         },
         {
           "tenantId": "449fbe1d-9c99-4509-9014-4fd5cf25b014",
-          "objectId": "cf33fea8-b30f-424f-ab73-c48d99e0b222", // adding adp-sxx-az-msi-x-001 to get secrets
+          "objectId": "909e8353-bf5c-4021-b8a8-467701ef162d", // adding adp-sxx-az-msi-x-001 to get secrets
           "permissions": {
             "keys": [],
             "secrets": [
