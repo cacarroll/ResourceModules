@@ -6,16 +6,18 @@ This section will give on an overview on how to get started using this repositor
 
 ### _Navigation_
 
-- [General prerequisites](#general-prerequisites)
-- [Where to start](#where-to-start)
-  - [**Option 1**: Use it as a basis to set up your own inner-source project](#option-1-use-it-as-a-basis-to-set-up-your-own-inner-source-project)
-    - [Fork the repository](#fork-the-repository)
-    - [Service Names](#service-names)
-    - [Dependencies](#dependencies)
-    - [GitHub-specific prerequisites](#github-specific-prerequisites)
-  - [**Option 2**: Use it as a local reference to build bicep templates](#option-2-use-it-as-a-local-reference-to-build-bicep-templates)
-    - [Clone / download the repository](#clone--download-the-repository)
-  - [**Option 3**: Use it as remote reference to reference the bicep templates](#option-3-use-it-as-remote-reference-to-reference-the-bicep-templates)
+- [Getting started](#getting-started)
+    - [_Navigation_](#navigation)
+  - [General prerequisites](#general-prerequisites)
+  - [Where to start](#where-to-start)
+    - [**Option 1**: Use it as a basis to set up your own inner-source project](#option-1-use-it-as-a-basis-to-set-up-your-own-inner-source-project)
+      - [Fork the repository](#fork-the-repository)
+      - [Service Names](#service-names)
+      - [Dependencies](#dependencies)
+      - [GitHub-specific prerequisites](#github-specific-prerequisites)
+    - [**Option 2**: Use it as a local reference to build bicep templates](#option-2-use-it-as-a-local-reference-to-build-bicep-templates)
+      - [Clone / download the repository](#clone--download-the-repository)
+    - [**Option 3**: Use it as remote reference to reference the bicep templates](#option-3-use-it-as-remote-reference-to-reference-the-bicep-templates)
 
 ---
 
