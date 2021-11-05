@@ -16,7 +16,7 @@ Mandatory. The path to the deployment file
 Mandatory. Path to the parameter file from root. Can be a single file, multiple files, or directory that conains (.json) files.
 
 .PARAMETER location
-Mandatory. Location to test in. E.g. WestEurope
+Mandatory. Location to test in. E.g. usgovvirginia
 
 .PARAMETER resourceGroupName
 Optional. Name of the resource group to deploy into. Mandatory if deploying into a resource group (resource group level)
@@ -37,14 +37,14 @@ Optional. Provde a Key Value Pair (Object) that will be appended to the Paramete
 Optional. Maximum retry limit if the deployment fails. Default is 3.
 
 .EXAMPLE
-New-ModuleDeployment -ModuleName 'KeyVault' -templateFilePath 'C:/KeyVault/deploy.json' -parameterFilePath 'C:/KeyVault/.parameters/parameters.json' -location 'WestEurope' -resourceGroupName 'aLegendaryRg'
+New-ModuleDeployment -ModuleName 'KeyVault' -templateFilePath 'C:/KeyVault/deploy.json' -parameterFilePath 'C:/KeyVault/.parameters/parameters.json' -location 'usgovvirginia' -resourceGroupName 'aLegendaryRg'
 
-Deploy the deploy.json of the KeyVault module with the parameter file 'parameters.json' using the resource group 'aLegendaryRg' in location 'WestEurope'
+Deploy the deploy.json of the KeyVault module with the parameter file 'parameters.json' using the resource group 'aLegendaryRg' in location 'usgovvirginia'
 
 .EXAMPLE
-New-ModuleDeployment -ModuleName 'KeyVault' -templateFilePath 'C:/ResourceGroup/deploy.json' -parameterFilePath 'C:/ResourceGroup/.parameters/parameters.json' -location 'WestEurope'
+New-ModuleDeployment -ModuleName 'KeyVault' -templateFilePath 'C:/ResourceGroup/deploy.json' -parameterFilePath 'C:/ResourceGroup/.parameters/parameters.json' -location 'usgovvirginia'
 
-Deploy the deploy.json of the ResourceGroup module with the parameter file 'parameters.json' in location 'WestEurope'
+Deploy the deploy.json of the ResourceGroup module with the parameter file 'parameters.json' in location 'usgovvirginia'
 #>
 function New-ModuleDeployment {
 

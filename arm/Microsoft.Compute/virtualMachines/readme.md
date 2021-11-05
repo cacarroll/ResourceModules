@@ -29,7 +29,7 @@ This module deploys one Virtual Machine with one or multiple nics and optionally
 | `backupVaultResourceGroup` | string | `[resourceGroup().name]` |  | Optional. Resource group of the backup recovery service vault. If not provided the current resource group name is considered by default. |
 | `baseTime` | string | `[utcNow('u')]` |  | Generated. Do not provide a value! This date value is used to generate a registration token. |
 | `bootDiagnosticStorageAccountName` | string |  |  | Optional. Storage account used to store boot diagnostic information. Boot diagnostics will be disabled if no value is provided. |
-| `bootDiagnosticStorageAccountUri` | string | `.blob.core.windows.net/` |  | Optional. Storage account boot diagnostic base URI. |
+| `bootDiagnosticStorageAccountUri` | string | `.blob.core.usgovcloudapi.net/` |  | Optional. Storage account boot diagnostic base URI. |
 | `certificatesToBeInstalled` | array | `[]` |  | Optional. Specifies set of certificates that should be installed onto the virtual machine. |
 | `cseManagedIdentity` | object | `{object}` |  | Optional. A managed identity to use for the CSE. |
 | `cseStorageAccountKey` | string |  |  | Optional. The storage key of the storage account to access for the CSE script(s). |
@@ -419,11 +419,11 @@ The field `nicSuffix` and `subnetId` are mandatory. If `enablePublicIP` is set t
   "value": [
     //storage accounts with SAS token requirement
     {
-      "uri": "https://storageAccount.blob.core.windows.net/avdscripts/File1.ps1",
+      "uri": "https://storageAccount.blob.core.usgovcloudapi.net/avdscripts/File1.ps1",
       "storageAccountId": "/subscriptions/12345678-1234-1234-1234-123456789012/resourceGroups/rgName/providers/Microsoft.Storage/storageAccounts/storageAccountName"
     },
     {
-      "uri": "https://storageAccount.blob.core.windows.net/avdscripts/File2.ps1",
+      "uri": "https://storageAccount.blob.core.usgovcloudapi.net/avdscripts/File2.ps1",
       "storageAccountId": "/subscriptions/12345678-1234-1234-1234-123456789012/resourceGroups/rgName/providers/Microsoft.Storage/storageAccounts/storageAccountName"
     },
     //storage account with public container (no SAS token is required) OR other public URL (not a storage account)
@@ -444,7 +444,7 @@ The field `nicSuffix` and `subnetId` are mandatory. If `enablePublicIP` is set t
 "windowsScriptExtensionFileData": {
   "value": [
     {
-      "https://mystorageaccount.blob.core.windows.net/avdscripts/testscript.ps1"
+      "https://mystorageaccount.blob.core.usgovcloudapi.net/avdscripts/testscript.ps1"
     }
   ]
 },

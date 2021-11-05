@@ -151,7 +151,7 @@ For available properties check <https://docs.microsoft.com/en-us/azure/templates
         "Owner": "abc.def@contoso.com",
         "BusinessUnit": "IaCs",
         "Environment": "PROD",
-        "Region": "USEast"
+        "Region": "USusgovvirginia"
       }
     }
   ]
@@ -195,7 +195,7 @@ For available properties check <https://docs.microsoft.com/en-us/azure/templates
                     "Owner": "abc.def@contoso.com",
                     "BusinessUnit": "IaCs",
                     "Environment": "PROD",
-                    "Region": "USEast"
+                    "Region": "USusgovvirginia"
                 }
             }
         },

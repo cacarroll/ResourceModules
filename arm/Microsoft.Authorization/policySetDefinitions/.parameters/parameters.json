@@ -30,7 +30,7 @@
                     "parameters": {
                         "listOfAllowedLocations": {
                             "value": [
-                                "australiaeast"
+                                "usgovvirginia"
                             ]
                         }
                     },
@@ -44,7 +44,7 @@
                     "parameters": {
                         "listOfAllowedLocations": {
                             "value": [
-                                "australiaeast"
+                                "usgovvirginia"
                             ]
                         }
                     },

@@ -27,6 +27,7 @@ runs:
       uses: Azure/login@v1
       with:
         creds: ${{ env.AZURE_CREDENTIALS }}
+        environment: 'AzureUSGovernment'
         enable-AzPSSession: true
 
     - name: 'Remove module'

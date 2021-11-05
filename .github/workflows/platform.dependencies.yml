@@ -12,7 +12,7 @@ on:
   #     - 'utilities/dependencies/**'
 
 env:
-  defaultLocation: 'WestEurope'
+  defaultLocation: 'usgovvirginia'
   resourceGroupName: 'validation-rg'
   removeDeployment: 'false'
   AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}

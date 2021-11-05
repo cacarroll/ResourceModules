@@ -2,7 +2,7 @@
     "variables": [
         {
             "name": "defaultLocation",
-            "value": "WestEurope"
+            "value": "usgovvirginia"
         },
         {
             "name": "resourceGroupName",
@@ -14,7 +14,7 @@
         },
         {
             "name": "componentTemplateSpecRGLocation",
-            "value": "WestEurope"
+            "value": "usgovvirginia"
         },
         {
             "name": "componentTemplateSpecDescription",

@@ -13,7 +13,7 @@
         },
         "connectionApi": {
             "value": {
-                "id": "/subscriptions/<<subscriptionId>>/providers/Microsoft.Web/locations/westeurope/managedApis/azuremonitorlogs"
+                "id": "/subscriptions/<<subscriptionId>>/providers/Microsoft.Web/locations/usgovvirginia/managedApis/azuremonitorlogs"
             }
         },
         "roleAssignments": {

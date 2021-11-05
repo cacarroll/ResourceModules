@@ -39,7 +39,7 @@ To ensure you can use all the content in this repostiroy you'd want to install
 
 > Source: [Install PowerShell on Windows, Linux, and macOS][InstallPS]
 
-- The [Azure Az Module][InstallAzPs] / or at least modules such as `Az.Accounts` & `Az.Resources`
+- The [Azure Az Module][InstallAzPs] / or at lusgovvirginia modules such as `Az.Accounts` & `Az.Resources`
 
   ```PowerShell
   # One-liner
@@ -146,7 +146,7 @@ If you instead just want to have a copy of the repository's content you can inst
 
 ### **Option 3**: Use it as remote reference to reference the bicep templates
 
-Last but not least, instead of fetching your own copy of the repository you can also choose to reference the content of the repository directly. This works as the repository is public and hence all file urls are available without any sort of authentication.
+Last but not lusgovvirginia, instead of fetching your own copy of the repository you can also choose to reference the content of the repository directly. This works as the repository is public and hence all file urls are available without any sort of authentication.
 
 > ***Note***: In cases where you want to assemble your own template that references other modules you should not rely on direct links as they referencing files may receive breaking changes. Instead you should rely on published versions instead.
 

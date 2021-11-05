@@ -64,10 +64,10 @@ This module deploys Traffic Manager, with resource lock.
                     "endpointStatus": "Enabled",
                     "endpointMonitorStatus": "CheckingEndpoint",
                     "targetResourceId": "/subscriptions/12345678-1234-1234-1234-123456789012/resourceGroups/<rgname>/providers/Microsoft.Network/publicIPAddresses/<pipname>",
-                    "target": "my-pip-001.eastus.cloudapp.azure.com",
+                    "target": "my-pip-001.usgovvirginiaus.cloudapp.azure.com",
                     "weight": 1,
                     "priority": 1,
-                    "endpointLocation": "East US"
+                    "endpointLocation": "usgovvirginia US"
                 }
             }
         ]

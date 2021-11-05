@@ -26,7 +26,7 @@ All tests are executed as part of the individual module pipelines, run each time
 
 The general idea is that you should fail as early as possible to allow for minimal wasted time and a fast response time.
 
-> ***Note:*** Both the Template Validation and Template Deployment tests are only as good as their parameter files. Hence you should make sure that you test at least a minimum set of parameters and a maximum set of parameters. Furthermore it makes sense to have different parameter files for different scenarios to test each variant.
+> ***Note:*** Both the Template Validation and Template Deployment tests are only as good as their parameter files. Hence you should make sure that you test at lusgovvirginia a minimum set of parameters and a maximum set of parameters. Furthermore it makes sense to have different parameter files for different scenarios to test each variant.
 
 Tests falls into four categories:
 
@@ -54,7 +54,7 @@ The following activities are run executing the `arm/.global/global.module.tests.
   - contains all the mandatory sections
   - describes all the parameters
 - **Parameter Files**. e.g.:
-  - at least one `*parameters.json` should exist
+  - at lusgovvirginia one `*parameters.json` should exist
   - files should be valid JSON
 
 ### Additional resources

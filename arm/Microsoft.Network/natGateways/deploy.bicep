@@ -13,7 +13,7 @@ param natGatewayPipName string = ''
 @description('Optional. Resource Id of the Public IP Prefix object. This is only needed if you want your Public IPs created in a PIP Prefix.')
 param natGatewayPublicIPPrefixId string = ''
 
-@description('Optional. DNS name of the Public IP resource. A region specific suffix will be appended to it, e.g.: your-DNS-name.westeurope.cloudapp.azure.com')
+@description('Optional. DNS name of the Public IP resource. A region specific suffix will be appended to it, e.g.: your-DNS-name.usgovvirginia.cloudapp.azure.com')
 param natGatewayDomainNameLabel string = ''
 
 @description('Optional. Existing Public IP Address resource names to use for the NAT Gateway.')

@@ -26,7 +26,7 @@ This module deploys a NAT Gateway.
 | `lock` | string | `NotSpecified` | `[CanNotDelete, NotSpecified, ReadOnly]` | Optional. Specify the type of lock. |
 | `logsToEnable` | array | `[DDoSProtectionNotifications, DDoSMitigationFlowLogs, DDoSMitigationReports]` | `[DDoSProtectionNotifications, DDoSMitigationFlowLogs, DDoSMitigationReports]` | Optional. The name of logs that will be streamed. |
 | `metricsToEnable` | array | `[AllMetrics]` | `[AllMetrics]` | Optional. The name of metrics that will be streamed. |
-| `natGatewayDomainNameLabel` | string |  |  | Optional. DNS name of the Public IP resource. A region specific suffix will be appended to it, e.g.: your-DNS-name.westeurope.cloudapp.azure.com |
+| `natGatewayDomainNameLabel` | string |  |  | Optional. DNS name of the Public IP resource. A region specific suffix will be appended to it, e.g.: your-DNS-name.usgovvirginia.cloudapp.azure.com |
 | `natGatewayName` | string |  |  | Required. Name of the Azure Bastion resource |
 | `natGatewayPipName` | string |  |  | Optional. Specifies the name of the Public IP used by the NAT Gateway. If it's not provided, a '-pip' suffix will be appended to the Bastion's name. |
 | `natGatewayPublicIpAddress` | bool |  |  | Optional. Use to have a new Public IP Address created for the NAT Gateway. |

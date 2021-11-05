@@ -22,7 +22,7 @@
             }
         },
         "location": {
-            "value": "westeurope"
+            "value": "usgovvirginia"
         },
         "name": {
             "value": "sxx-az-sqlsrv-x-001"

@@ -6,13 +6,13 @@
             "value": "adp-sxx-az-am-x-001"
         },
         "cacheName": {
-            "value": "westeurope"
+            "value": "usgovvirginia"
         },
         "connectionString": {
             "value": "connectionstringtest"
         },
         "useFromLocation": {
-            "value": "westeurope"
+            "value": "usgovvirginia"
         },
         "cuaId": {
             "value": "00000-0-000000"

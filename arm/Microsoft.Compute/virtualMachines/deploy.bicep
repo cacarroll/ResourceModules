@@ -84,7 +84,7 @@ param userAssignedIdentities object = {}
 param bootDiagnosticStorageAccountName string = ''
 
 @description('Optional. Storage account boot diagnostic base URI.')
-param bootDiagnosticStorageAccountUri string = '.blob.core.windows.net/'
+param bootDiagnosticStorageAccountUri string = '.blob.core.usgovcloudapi.net/'
 
 @description('Optional. Resource name of a proximity placement group.')
 param proximityPlacementGroupName string = ''
