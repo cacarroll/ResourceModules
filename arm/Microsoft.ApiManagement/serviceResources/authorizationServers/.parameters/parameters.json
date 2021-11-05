@@ -9,7 +9,7 @@
             "value": "AuthServer1"
         },
         "authorizationEndpoint": {
-            "value": "https://login.microsoftonline.com/651b43ce-ccb8-4301-b551-b04dd872d401/oauth2/v2.0/authorize"
+            "value": "https://login.microsoftonline.us/651b43ce-ccb8-4301-b551-b04dd872d401/oauth2/v2.0/authorize"
         },
         "grantTypes": {
             "value": [
@@ -36,7 +36,7 @@
             "value": "http://localhost"
         },
         "tokenEndpoint": {
-            "value": "https://login.microsoftonline.com/651b43ce-ccb8-4301-b551-b04dd872d401/oauth2/v2.0/token"
+            "value": "https://login.microsoftonline.us/651b43ce-ccb8-4301-b551-b04dd872d401/oauth2/v2.0/token"
         }
     }
 }
