@@ -6,10 +6,10 @@
             "value": "sxx-az-des-x-001"
         },
         "keyVaultId": {
-            "value": "/subscriptions/6ec6c303-4769-4857-b5fb-819de3a5ba4a/resourceGroups/validation-rg/providers/Microsoft.KeyVault/vaults/adp-sxx-az-kv-x-001"
+            "value": "/subscriptions/6ec6c303-4769-4857-b5fb-819de3a5ba4a/resourceGroups/validation-rg/providers/Microsoft.KeyVault/vaults/sxx-az-kv-x-001"
         },
         "keyUrl": {
-            "value": "https://adp-sxx-az-kv-x-001.vault.azure.net/keys/keyEncryptionKey/685153483a1140e3856f004a753e1ab4"
+            "value": "https://sxx-az-kv-x-001.vault.azure.net/keys/keyEncryptionKey/685153483a1140e3856f004a753e1ab4"
         },
         "roleAssignments": {
             "value": [

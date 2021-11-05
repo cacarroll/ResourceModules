@@ -12,7 +12,7 @@
             "value": "/subscriptions/6ec6c303-4769-4857-b5fb-819de3a5ba4a/resourceGroups/validation-rg/providers/Microsoft.Network/privateDnsZones/privatelink.vaultcore.azure.net"
         },
         "serviceResourceId": {
-            "value": "/subscriptions/6ec6c303-4769-4857-b5fb-819de3a5ba4a/resourceGroups/validation-rg/providers/Microsoft.KeyVault/vaults/adp-sxx-az-kv-x-001"
+            "value": "/subscriptions/6ec6c303-4769-4857-b5fb-819de3a5ba4a/resourceGroups/validation-rg/providers/Microsoft.KeyVault/vaults/sxx-az-kv-x-001"
         },
         "groupId": {
             "value": [
