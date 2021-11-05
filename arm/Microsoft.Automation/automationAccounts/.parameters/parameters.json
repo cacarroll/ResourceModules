@@ -21,11 +21,11 @@
         "privateEndpoints": {
             "value": [
                 {
-                    "subnetResourceId": "/subscriptions/<<subscriptionId>>/resourceGroups/validation-rg/providers/Microsoft.Network/virtualNetworks/adp-sxx-az-vnet-x-001/subnets/sxx-az-subnet-x-005-privateEndpoints",
+                    "subnetResourceId": "/subscriptions/6ec6c303-4769-4857-b5fb-819de3a5ba4a/resourceGroups/validation-rg/providers/Microsoft.Network/virtualNetworks/adp-sxx-az-vnet-x-001/subnets/sxx-az-subnet-x-005-privateEndpoints",
                     "service": "Webhook"
                 },
                 {
-                    "subnetResourceId": "/subscriptions/<<subscriptionId>>/resourceGroups/validation-rg/providers/Microsoft.Network/virtualNetworks/adp-sxx-az-vnet-x-001/subnets/sxx-az-subnet-x-005-privateEndpoints",
+                    "subnetResourceId": "/subscriptions/6ec6c303-4769-4857-b5fb-819de3a5ba4a/resourceGroups/validation-rg/providers/Microsoft.Network/virtualNetworks/adp-sxx-az-vnet-x-001/subnets/sxx-az-subnet-x-005-privateEndpoints",
                     "service": "DSCAndHybridWorker"
                 }
             ]

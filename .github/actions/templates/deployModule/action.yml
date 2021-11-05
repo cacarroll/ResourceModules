@@ -52,7 +52,7 @@ runs:
         # Load used funtions
         . ".github/actions/sharedScripts/Convert-TokensInFiles.ps1"
         $TokensReplaceWithObject = @(
-            @{ Replace = "<<subscriptionId>>"; With = '${{ inputs.subscriptionId }}' }
+            @{ Replace = "6ec6c303-4769-4857-b5fb-819de3a5ba4a"; With = '${{ inputs.subscriptionId }}' }
         )
         write-verbose "Invoking Convert-TokensInFiles"
         Convert-TokensInFiles -Paths '${{ inputs.parameterFilePath }}' -TokensReplaceWith $TokensReplaceWithObject

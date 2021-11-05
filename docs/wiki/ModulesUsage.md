@@ -137,7 +137,7 @@ param subnets array = [
 // ========================= //
 // Template Specs References //
 // ========================= //
-var templateSpecSub = '<<subscriptionId>>'
+var templateSpecSub = '6ec6c303-4769-4857-b5fb-819de3a5ba4a'
 var templateSpecRg = 'artifacts-rg'
 
 // Network Security Group

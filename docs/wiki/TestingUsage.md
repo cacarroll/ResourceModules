@@ -56,7 +56,7 @@ Invoke-Pester -Configuration @{
     }
     ```
 
-For these use cases, before committing the change and testing the module using GitHub actions, replace the subscription ID values with `<<subscriptionId>>`. This allows the pipelines to replace the string with the right subscription ID before the template is deployed to Azure.
+For these use cases, before committing the change and testing the module using GitHub actions, replace the subscription ID values with `6ec6c303-4769-4857-b5fb-819de3a5ba4a`. This allows the pipelines to replace the string with the right subscription ID before the template is deployed to Azure.
 
 ---
 **Note**: Failure to replace the subscription ID value so will result in a Pester test failure that detects if you are using a hard-coded subscription ID.
