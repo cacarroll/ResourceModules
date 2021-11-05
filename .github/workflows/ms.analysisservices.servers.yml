@@ -17,7 +17,7 @@ on:
         default: '0.0.1'
   push:
     branches:
-      - main
+      - ccarroll/UsGovTesting2
     paths:
       - '.github/actions/templates/**'
       - '.github/workflows/ms.analysisservices.servers.yml'
