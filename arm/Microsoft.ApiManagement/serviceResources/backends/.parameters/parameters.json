@@ -9,7 +9,7 @@
             "value": "backend"
         },
         "url": {
-            "value": "http://echoapi.cloudapp.net/api"
+            "value": "http://echoapi.usgovcloudapp.net/api"
         },
         "tls": {
             "value": {

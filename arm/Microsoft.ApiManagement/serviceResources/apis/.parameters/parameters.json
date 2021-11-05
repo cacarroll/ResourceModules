@@ -15,7 +15,7 @@
             "value": "echo"
         },
         "serviceUrl": {
-            "value": "http://echoapi.cloudapp.net/api"
+            "value": "http://echoapi.usgovcloudapp.net/api"
         },
         "apiVersionSet": {
             "value": {
