@@ -100,7 +100,7 @@ Since also dependency resources are in turn subject to dependencies with each ot
 **First level resources**
 
   1. Resource Groups: Leveraged by all modules. Multiple instances are deployed:
-     - 'validation-rg': The resource group to which resources are deployed by default during the test deployment phase. This same resource group is also the one hosting the dependencies.
+     - 'validation-rg9': The resource group to which resources are deployed by default during the test deployment phase. This same resource group is also the one hosting the dependencies.
      - 'artifacts-rg': The resource group to which templates are published during the publishing phase.
 
 **Second level resources**: This group of resources has a dependency only on the resource group which will host them. Resources in this group can be deployed in parallel.

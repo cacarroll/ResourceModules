@@ -21,9 +21,9 @@ This parameter controls, how often we want to push resources back in the queue a
 Mandatory. Path to the module template from root.
 
 .EXAMPLE
-Remove-DeployedModule -moduleName 'KeyVault' -resourceGroupName 'validation-rg' -modulePath 'C:/KeyVault/deploy.json'
+Remove-DeployedModule -moduleName 'KeyVault' -resourceGroupName 'validation-rg9' -modulePath 'C:/KeyVault/deploy.json'
 
-Remove any resource in the resource group 'validation-rg' with tag 'removeModule = KeyVault'
+Remove any resource in the resource group 'validation-rg9' with tag 'removeModule = KeyVault'
 #>
 function Remove-DeployedModule {
 

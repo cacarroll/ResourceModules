@@ -31,7 +31,7 @@
         "adminPassword": {
             "reference": {
                 "keyVault": {
-                    "id": "/subscriptions/6ec6c303-4769-4857-b5fb-819de3a5ba4a/resourceGroups/validation-rg/providers/Microsoft.KeyVault/vaults/sxx-az-kv-x-001"
+                    "id": "/subscriptions/6ec6c303-4769-4857-b5fb-819de3a5ba4a/resourceGroups/validation-rg9/providers/Microsoft.KeyVault/vaults/sxx-az-kv-x-001"
                 },
                 "secretName": "adminPassword"
             }
@@ -43,7 +43,7 @@
                     "ipConfigurations": [
                         {
                             "name": "ipconfig01",
-                            "subnetId": "/subscriptions/6ec6c303-4769-4857-b5fb-819de3a5ba4a/resourceGroups/validation-rg/providers/Microsoft.Network/virtualNetworks/adp-sxx-az-vnet-x-001/subnets/sxx-az-subnet-x-001",
+                            "subnetId": "/subscriptions/6ec6c303-4769-4857-b5fb-819de3a5ba4a/resourceGroups/validation-rg9/providers/Microsoft.Network/virtualNetworks/adp-sxx-az-vnet-x-001/subnets/sxx-az-subnet-x-001",
                             "pipConfiguration": {
                                 "publicIpNameSuffix": "-pip-01",
                                 "roleAssignments": [
@@ -95,9 +95,9 @@
                 "settings": {
                     "EncryptionOperation": "EnableEncryption",
                     "KeyVaultURL": "https://sxx-az-kv-x-001.vault.usgovcloudapi.net/",
-                    "KeyVaultResourceId": "/subscriptions/6ec6c303-4769-4857-b5fb-819de3a5ba4a/resourceGroups/validation-rg/providers/Microsoft.KeyVault/vaults/sxx-az-kv-x-001",
+                    "KeyVaultResourceId": "/subscriptions/6ec6c303-4769-4857-b5fb-819de3a5ba4a/resourceGroups/validation-rg9/providers/Microsoft.KeyVault/vaults/sxx-az-kv-x-001",
                     "KeyEncryptionKeyURL": "https://sxx-az-kv-x-001.vault.usgovcloudapi.net/keys/keyEncryptionKey/c263cf982a8442f69c3a0ece5e345b6c",
-                    "KekVaultResourceId": "/subscriptions/6ec6c303-4769-4857-b5fb-819de3a5ba4a/resourceGroups/validation-rg/providers/Microsoft.KeyVault/vaults/sxx-az-kv-x-001",
+                    "KekVaultResourceId": "/subscriptions/6ec6c303-4769-4857-b5fb-819de3a5ba4a/resourceGroups/validation-rg9/providers/Microsoft.KeyVault/vaults/sxx-az-kv-x-001",
                     "KeyEncryptionAlgorithm": "RSA-OAEP", //'RSA-OAEP'/'RSA-OAEP-256'/'RSA1_5'
                     "VolumeType": "All", //'OS'/'Data'/'All'
                     "ResizeOSDisk": "false"
@@ -117,16 +117,16 @@
             "value": "adp-sxx-az-rsv-x-001"
         },
         "backupVaultResourceGroup": {
-            "value": "validation-rg"
+            "value": "validation-rg9"
         },
         "backupPolicyName": {
             "value": "VMpolicy"
         },
         "workspaceId": {
-            "value": "/subscriptions/6ec6c303-4769-4857-b5fb-819de3a5ba4a/resourcegroups/validation-rg/providers/microsoft.operationalinsights/workspaces/adp-sxx-az-la-x-001"
+            "value": "/subscriptions/6ec6c303-4769-4857-b5fb-819de3a5ba4a/resourcegroups/validation-rg9/providers/microsoft.operationalinsights/workspaces/adp-sxx-az-la-x-001"
         },
         "diagnosticStorageAccountId": {
-            "value": "/subscriptions/6ec6c303-4769-4857-b5fb-819de3a5ba4a/resourceGroups/validation-rg/providers/Microsoft.Storage/storageAccounts/adpsxxazsaweux001"
+            "value": "/subscriptions/6ec6c303-4769-4857-b5fb-819de3a5ba4a/resourceGroups/validation-rg9/providers/Microsoft.Storage/storageAccounts/adpsxxazsaweux001"
         },
         "roleAssignments": {
             "value": [

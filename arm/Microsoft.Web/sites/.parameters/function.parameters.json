@@ -32,7 +32,7 @@
             "value": "adpsxxazsaweux002"
         },
         "storageAccountResourceGroupName": {
-            "value": "validation-rg"
+            "value": "validation-rg9"
         },
         "functionsWorkerRuntime": {
             "value": "powershell"

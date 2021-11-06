@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "resourceGroupName": {
-      "value": "validation-rg"
+      "value": "validation-rg9"
     }
   }
 }

@@ -6,7 +6,7 @@
             "value": "sxx-az-diag-x-001"
         },
         "workspaceId": {
-            "value": "/subscriptions/6ec6c303-4769-4857-b5fb-819de3a5ba4a/resourcegroups/validation-rg/providers/microsoft.operationalinsights/workspaces/adp-sxx-az-la-x-001"
+            "value": "/subscriptions/6ec6c303-4769-4857-b5fb-819de3a5ba4a/resourcegroups/validation-rg9/providers/microsoft.operationalinsights/workspaces/adp-sxx-az-la-x-001"
         }
     }
 }
