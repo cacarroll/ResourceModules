@@ -8,7 +8,7 @@
         "locations": {
             "value": [
                 {
-                    "locationName": "West Europe",
+                    "locationName": "usgovvirginia",
                     "failoverPriority": 0,
                     "isZoneRedundant": false
                 },

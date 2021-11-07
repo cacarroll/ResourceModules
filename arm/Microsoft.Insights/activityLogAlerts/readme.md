@@ -121,7 +121,7 @@ Each condition can specify only one field between `equals` and `containsAny`.
         {
             "field": "properties.impactedServices[*].ImpactedRegions[*].RegionName",
             "containsAny": [
-                "West Europe",
+                "usgovvirginia",
                 "Global"
             ]
         }

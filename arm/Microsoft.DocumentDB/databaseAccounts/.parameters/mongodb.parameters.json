@@ -6,12 +6,12 @@
             "value": "sxx-az-cdb-x-002"
         },
         "location": {
-            "value": "West Europe"
+            "value": "usgovvirginia"
         },
         "locations": {
             "value": [
                 {
-                    "locationName": "West Europe",
+                    "locationName": "usgovvirginia",
                     "failoverPriority": 0,
                     "isZoneRedundant": false
                 },
