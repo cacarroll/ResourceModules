@@ -22,7 +22,7 @@ var builtInRoleNames = {
   'User Access Administrator': subscriptionResourceId('Microsoft.Authorization/roleDefinitions', '18d7d88d-d35e-4fb5-a5c3-7773c20a72d9')
 }
 
-resource workspace 'Microsoft.DesktopVirtualization/workspaces@2021-07-12' existing = {
+resource workspace 'Microsoft.DesktopVirtualization/workspaces@2021-03-09-preview' existing = {
   name: resourceName
 }
 

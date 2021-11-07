@@ -6,7 +6,7 @@ This module deploys AVD Applications.
 
 | Resource Type | Api Version |
 | :-- | :-- |
-| `Microsoft.DesktopVirtualization/applicationGroups/applications` | 2021-07-12 |
+| `Microsoft.DesktopVirtualization/applicationGroups/applications` | 2021-03-09-preview |
 
 ## Parameters
 
@@ -57,4 +57,4 @@ This module deploys AVD Applications.
 
 ## Template references
 
-- [Applicationgroups/Applications](https://docs.microsoft.com/en-us/azure/templates/Microsoft.DesktopVirtualization/2021-07-12/applicationGroups/applications)
+- [Applicationgroups/Applications](https://docs.microsoft.com/en-us/azure/templates/Microsoft.DesktopVirtualization/2021-03-09-preview/applicationGroups/applications)

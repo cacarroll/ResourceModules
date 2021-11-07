@@ -14,7 +14,7 @@ module pid_cuaId '.bicep/nested_cuaId.bicep' = if (!empty(cuaId)) {
   params: {}
 }
 
-resource applications_res 'Microsoft.DesktopVirtualization/applicationGroups/applications@2021-07-12' = [for application in applications: {
+resource applications_res 'Microsoft.DesktopVirtualization/applicationGroups/applications@2021-03-09-preview' = [for application in applications: {
   name: '${appGroupName}/${application.name}'
   properties: {
     description: application.description

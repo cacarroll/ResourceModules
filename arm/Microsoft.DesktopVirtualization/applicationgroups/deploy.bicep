@@ -81,11 +81,11 @@ module pid_cuaId '.bicep/nested_cuaId.bicep' = if (!empty(cuaId)) {
   params: {}
 }
 
-resource appGroup_hostpool 'Microsoft.DesktopVirtualization/hostpools@2021-07-12' existing = {
+resource appGroup_hostpool 'Microsoft.DesktopVirtualization/hostpools@2021-03-09-preview' existing = {
   name: hostpoolName
 }
 
-resource appGroup 'Microsoft.DesktopVirtualization/applicationgroups@2021-07-12' = {
+resource appGroup 'Microsoft.DesktopVirtualization/applicationgroups@2021-03-09-preview' = {
   name: name
   location: location
   tags: tags

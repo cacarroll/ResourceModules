@@ -8,7 +8,7 @@ This module deploys AVD Application Groups, with resource lock and diagnostics c
 | :-- | :-- |
 | `Microsoft.Authorization/locks` | 2016-09-01 |
 | `Microsoft.Authorization/roleAssignments` | 2020-04-01-preview |
-| `Microsoft.DesktopVirtualization/applicationGroups` | 2021-07-12 |
+| `Microsoft.DesktopVirtualization/applicationGroups` | 2021-03-09-preview |
 | `Microsoft.Insights/diagnosticSettings` | 2017-05-01-preview |
 
 ## Parameters
@@ -90,5 +90,5 @@ Tag names and tag values can be provided as needed. A tag can be left without a 
 
 - [Locks](https://docs.microsoft.com/en-us/azure/templates/Microsoft.Authorization/2016-09-01/locks)
 - [Roleassignments](https://docs.microsoft.com/en-us/azure/templates/Microsoft.Authorization/2020-04-01-preview/roleAssignments)
-- [Applicationgroups](https://docs.microsoft.com/en-us/azure/templates/Microsoft.DesktopVirtualization/2021-07-12/applicationGroups)
+- [Applicationgroups](https://docs.microsoft.com/en-us/azure/templates/Microsoft.DesktopVirtualization/2021-03-09-preview/applicationGroups)
 - [Diagnosticsettings](https://docs.microsoft.com/en-us/azure/templates/Microsoft.Insights/2017-05-01-preview/diagnosticSettings)
