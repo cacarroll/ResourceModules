@@ -16,7 +16,7 @@
                     "isZoneRedundant": false
                 },
                 {
-                    "locationName": "North Europe",
+                    "locationName": "usgovvirginia",
                     "failoverPriority": 1,
                     "isZoneRedundant": false
                 }
