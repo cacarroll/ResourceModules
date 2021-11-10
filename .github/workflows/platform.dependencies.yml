@@ -606,6 +606,7 @@ jobs:
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
+          environment: 'AzureUSGovernment'
           enable-AzPSSession: true
       - name: Run PowerShell
         uses: azure/powershell@v1
