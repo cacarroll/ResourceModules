@@ -31,7 +31,7 @@
         "adminPassword": {
             "reference": {
                 "keyVault": {
-                    "id": "/subscriptions/6ec6c303-4769-4857-b5fb-819de3a5ba4a/resourceGroups/validation-rg9/providers/Microsoft.KeyVault/vaults/sxx-az-kv-x-001"
+                    "id": "/subscriptions/6ec6c303-4769-4857-b5fb-819de3a5ba4a/resourceGroups/validation-rg9/providers/Microsoft.KeyVault/vaults/sxx-az-kv-x-006"
                 },
                 "secretName": "adminPassword"
             }
@@ -94,10 +94,10 @@
             "value": {
                 "settings": {
                     "EncryptionOperation": "EnableEncryption",
-                    "KeyVaultURL": "https://sxx-az-kv-x-001.vault.usgovcloudapi.net/",
-                    "KeyVaultResourceId": "/subscriptions/6ec6c303-4769-4857-b5fb-819de3a5ba4a/resourceGroups/validation-rg9/providers/Microsoft.KeyVault/vaults/sxx-az-kv-x-001",
-                    "KeyEncryptionKeyURL": "https://sxx-az-kv-x-001.vault.usgovcloudapi.net/keys/keyEncryptionKey/c263cf982a8442f69c3a0ece5e345b6c",
-                    "KekVaultResourceId": "/subscriptions/6ec6c303-4769-4857-b5fb-819de3a5ba4a/resourceGroups/validation-rg9/providers/Microsoft.KeyVault/vaults/sxx-az-kv-x-001",
+                    "KeyVaultURL": "https://sxx-az-kv-x-006.vault.usgovcloudapi.net/",
+                    "KeyVaultResourceId": "/subscriptions/6ec6c303-4769-4857-b5fb-819de3a5ba4a/resourceGroups/validation-rg9/providers/Microsoft.KeyVault/vaults/sxx-az-kv-x-006",
+                    "KeyEncryptionKeyURL": "https://sxx-az-kv-x-006.vault.usgovcloudapi.net/keys/keyEncryptionKey/c263cf982a8442f69c3a0ece5e345b6c",
+                    "KekVaultResourceId": "/subscriptions/6ec6c303-4769-4857-b5fb-819de3a5ba4a/resourceGroups/validation-rg9/providers/Microsoft.KeyVault/vaults/sxx-az-kv-x-006",
                     "KeyEncryptionAlgorithm": "RSA-OAEP", //'RSA-OAEP'/'RSA-OAEP-256'/'RSA1_5'
                     "VolumeType": "All", //'OS'/'Data'/'All'
                     "ResizeOSDisk": "false"
