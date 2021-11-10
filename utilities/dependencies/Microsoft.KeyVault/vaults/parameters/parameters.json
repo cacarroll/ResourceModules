@@ -7,26 +7,26 @@
     },
     "accessPolicies": {
       "value": [
+        // {
+        //   "tenantId": "8a09f2d7-8415-4296-92b2-80bb4666c5fc",
+        //   "objectId": "f40e18f0-6544-45c2-9d24-639a8bb3b41a", // Backup Management Service needs access to back up the keys and secrets, along with the associated VMs
+        //   "permissions": {
+        //     "keys": [
+        //       "Get",
+        //       "List",
+        //       "Backup"
+        //     ],
+        //     "secrets": [
+        //       "Get",
+        //       "List",
+        //       "Backup"
+        //     ],
+        //     "certificates": []
+        //   }
+        // },
         {
-          "tenantId": "449fbe1d-9c99-4509-9014-4fd5cf25b014",
-          "objectId": "f40e18f0-6544-45c2-9d24-639a8bb3b41a", // Backup Management Service needs access to back up the keys and secrets, along with the associated VMs
-          "permissions": {
-            "keys": [
-              "Get",
-              "List",
-              "Backup"
-            ],
-            "secrets": [
-              "Get",
-              "List",
-              "Backup"
-            ],
-            "certificates": []
-          }
-        },
-        {
-          "tenantId": "449fbe1d-9c99-4509-9014-4fd5cf25b014",
-          "objectId": "909e8353-bf5c-4021-b8a8-467701ef162d", // adding adp-sxx-az-msi-x-001 to get secrets
+          "tenantId": "8a09f2d7-8415-4296-92b2-80bb4666c5fc",
+          "objectId": "e16fa6a8-cf1b-4a95-818f-9b989b16be23", // adding adp-sxx-az-msi-x-001 to get secrets
           "permissions": {
             "keys": [],
             "secrets": [
@@ -36,8 +36,8 @@
           }
         },
         {
-          "tenantId": "449fbe1d-9c99-4509-9014-4fd5cf25b014",
-          "objectId": "e58511af-4da2-449c-a5cd-6a10271cfb83", // dependency access
+          "tenantId": "8a09f2d7-8415-4296-92b2-80bb4666c5fc",
+          "objectId": "78a95f5e-5774-4f25-9343-5a39d9ded765", // dependency access
           "permissions": {
             "keys": [
               "all"
